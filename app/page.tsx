@@ -1,67 +1,92 @@
-import NavItem from "./components/NavItem";
+import AppBar from "./components/AppBar";
 import ImageSlide from "./components/ImageSlide";
 import Testimonials from "./components/Testimonials";
 
 export default function Home() {
   return (
     <>
-      <div className="bg-emerald-600 text-white">
-        <div className="container mx-auto">
-          <div className="flex justify-between py-2 px-5">
-            <div className="w-6/12 uppercase text-base sm:text-xl sm:w-3/12 font-semibold tracking-wider leading-4">
-              SKSS BAZNAS KABUPATEN MOJOKERTO
-            </div>
-            <div className="w-6/12 flex justify-end">
-              <div className="flex sm:hidden h-full items-center">
-                <button className="text-white focus:outline-none">
-                  <svg
-                    className="w-6 h-6"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M4 6h16M4 12h16m-7 6h7"
-                    ></path>
-                  </svg>
-                </button>
+      <AppBar />
+      <ImageSlide />
+      <div className="max-7xl relative py-24 flex justify-center">
+        <div className="mx-auto max-w-2xl lg:mx-0">
+          <h1 className="text-5xl font-bold mb-24 text-center">Agenda</h1>
+          <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+            <li>
+              <div className="timeline-middle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="h-5 w-5"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clipRule="evenodd"
+                  />
+                </svg>
               </div>
-              <ul className="hidden sm:flex justify-end space-x-10 h-full items-center">
-                <NavItem>Beranda</NavItem>
-                <NavItem>Blog</NavItem>
-                <NavItem>FAQ</NavItem>
-              </ul>
-            </div>
-          </div>
+              <div className="timeline-start mb-10 md:text-end">
+                <time className="font-mono italic">10-14 Maret 2025</time>
+                <div className="text-lg font-black">Pasar Murah Ramadhan</div>
+                Membantu BAZNAS Kabupaten Mojokerto untuk melaksanakan acara
+                Pasar Murah Ramadhan. Acara ini bertujuan untuk membantu
+                masyarakat yang membutuhkan dalam memenuhi kebutuhan pokok
+                selama bulan Ramadhan
+              </div>
+              <hr />
+            </li>
+            <li>
+              <hr />
+              <div className="timeline-middle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="h-5 w-5"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div className="timeline-end mb-10">
+                <time className="font-mono italic">April 2025</time>
+                <div className="text-lg font-black">Jum'at Berkah</div>
+                Kami memberdayakan sedekah dari pengusaha warung makanan berupa sejumlah makanan dan kotak nasi sekitar dan membagikannya kepada masyarakat
+                sekitar yang membutuhkan
+              </div>
+              <hr />
+            </li>
+            <li>
+              <hr />
+              <div className="timeline-middle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="h-5 w-5"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div className="timeline-start mb-10 md:text-end">
+                <time className="font-mono italic">???</time>
+                <div className="text-lg font-black">
+                  Tunggu acara kami selanjutnya ya...!!
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
-      <ImageSlide />
-      <div className="relative py-24">
-        <h1 className="text-6xl text-white font-bold text-center w-full mb-24" style={{ textShadow: "0 0 6px rgba(0,0,0,0.4)" }}>
-          Apa kata mereka?
-        </h1>
-        <div
-          className="absolute -z-10 bottom-[2%] left-0 -mr-56 h-[30rem] w-screen max-w-full rounded-full blur-3xl"
-          style={{
-            background:
-              "radial-gradient(circle, rgba(255, 238, 88, 0.6) 0%, rgba(255, 238, 88, 0.4) 40%, rgba(255, 238, 88, 0.2) 70%, transparent 100%)",
-          }}
-          aria-hidden="true"
-        />
-        <div
-          className="absolute -z-10 bottom-[2%] left-0 -ml-56 h-[30rem] w-screen max-w-full rounded-full blur-3xl"
-          style={{
-            background:
-              "radial-gradient(circle, rgba(5, 150, 105, 0.6) 0%, rgba(5, 150, 105, 0.4) 40%, rgba(5, 150, 105, 0.2) 70%, transparent 100%)",
-          }}
-          aria-hidden="true"
-        />
-        <Testimonials />
-      </div>
+      <Testimonials />
     </>
   );
 }

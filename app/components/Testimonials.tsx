@@ -24,49 +24,52 @@ const Testimonials = () => {
 
     const mouseUpHandler = () => {
       isDown = false;
-      window.removeEventListener('mousemove', mouseMoveHandler);
-      window.removeEventListener('mouseup', mouseUpHandler);
-      window.removeEventListener('mouseleave', mouseUpHandler);
+      window.removeEventListener("mousemove", mouseMoveHandler);
+      window.removeEventListener("mouseup", mouseUpHandler);
+      window.removeEventListener("mouseleave", mouseUpHandler);
     };
 
     isDown = true;
     startX = e.pageX - slider.offsetLeft;
     scrollLeft = slider.scrollLeft;
-    window.addEventListener('mousemove', mouseMoveHandler);
-    window.addEventListener('mouseup', mouseUpHandler);
-    window.addEventListener('mouseleave', mouseUpHandler);
+    window.addEventListener("mousemove", mouseMoveHandler);
+    window.addEventListener("mouseup", mouseUpHandler);
+    window.addEventListener("mouseleave", mouseUpHandler);
   };
 
   return (
-    <div
-      className="flex px-10 overflow-x-auto space-x-10 no-scrollbar cursor-grab active:cursor-grabbing"
-      onMouseDown={handleMouseDown}
-      ref={sliderRef}
-    >
-      <TestimonialCard
-        imageSrc="/images/person-1.jpg"
-        name="Sahrul Hidayat"
-        profession="Mahasiswa UBS PPNI Mojokerto"
-        testimonial="Saya sangat senang dengan layanan yang diberikan oleh SKSS BAZNAS Kabupaten Mojokerto. Terima kasih banyak!. Saya sangat senang dengan layanan yang diberikan oleh SKSS BAZNAS Kabupaten Mojokerto. Terima kasih banyak!"
-      />
-      <TestimonialCard
-        imageSrc="/images/person-1.jpg"
-        name="Sahrul Hidayat"
-        profession="Mahasiswa UBS PPNI"
-        testimonial="Ini adalah testimoni saya"
-      />
-      <TestimonialCard
-        imageSrc="/images/person-1.jpg"
-        name="Sahrul Hidayat"
-        profession="Mahasiswa UBS PPNI"
-        testimonial="Ini adalah testimoni saya"
-      />
-      <TestimonialCard
-        imageSrc="/images/person-1.jpg"
-        name="Sahrul Hidayat"
-        profession="Mahasiswa UBS PPNI"
-        testimonial="Ini adalah testimoni saya"
-      />
+    <div className="relative py-24">
+      <h1 className="text-5xl font-bold mb-24 text-center">Apa kata mereka?</h1>
+      <div
+        className="flex px-10 overflow-x-auto space-x-10 no-scrollbar cursor-grab active:cursor-grabbing"
+        onMouseDown={handleMouseDown}
+        ref={sliderRef}
+      >
+        <TestimonialCard
+          imageSrc="/images/person-1.webp"
+          name="Sahrul Hidayat"
+          profession="Mahasiswa UBS PPNI Mojokerto"
+          testimonial="Saya sangat senang dengan layanan yang diberikan oleh SKSS BAZNAS Kabupaten Mojokerto. Terima kasih banyak! Saya sangat senang dengan layanan yang diberikan oleh SKSS BAZNAS Kabupaten Mojokerto. Terima kasih banyak!"
+        />
+        <TestimonialCard
+          imageSrc="/images/person-1.webp"
+          name="Sahrul Hidayat"
+          profession="Mahasiswa UBS PPNI"
+          testimonial="Ini adalah testimoni saya"
+        />
+        <TestimonialCard
+          imageSrc="/images/person-1.webp"
+          name="Sahrul Hidayat"
+          profession="Mahasiswa UBS PPNI"
+          testimonial="Ini adalah testimoni saya"
+        />
+        <TestimonialCard
+          imageSrc="/images/person-1.webp"
+          name="Sahrul Hidayat"
+          profession="Mahasiswa UBS PPNI"
+          testimonial="Ini adalah testimoni saya"
+        />
+      </div>
     </div>
   );
 };

@@ -33,7 +33,7 @@ export default function ImageSlide() {
             <Image
               src={slide.src}
               alt={slide.alt}
-              layout="fill"
+              fill
               className="object-cover object-center h-full w-full"
             />
           </div>

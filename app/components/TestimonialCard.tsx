@@ -13,7 +13,7 @@ const TestimonialCard = ({
 }) => {
   return (
     <div
-      className={`flex min-w-[560px] min-h-[180px] rounded-3xl border-2 border-white/70 bg-white/70 p-4 backdrop-blur-md`}
+      className="flex min-w-[560px] min-h-[180px] rounded-3xl border-2 border-white/70 bg-white/70 p-4 backdrop-blur-md"
     >
       <div className="rounded-3xl h-[200px] w-[150px] overflow-hidden flex-shrink-0">
         <Image
