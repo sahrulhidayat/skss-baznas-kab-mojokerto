@@ -11,8 +11,8 @@ const Testimonials = () => {
     if (!slider) return;
 
     let isDown = false;
-    let startX: number;
-    let scrollLeft: number;
+    let startX = 0;
+    let scrollLeft = 0;
 
     isDown = true;
     startX = e.pageX - slider.offsetLeft;
@@ -32,7 +32,7 @@ const Testimonials = () => {
       window.removeEventListener("mouseup", mouseUpHandler);
       window.removeEventListener("mouseleave", mouseUpHandler);
     };
-    
+
     window.addEventListener("mousemove", mouseMoveHandler);
     window.addEventListener("mouseup", mouseUpHandler);
     window.addEventListener("mouseleave", mouseUpHandler);

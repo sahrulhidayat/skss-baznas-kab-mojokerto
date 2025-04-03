@@ -16,7 +16,7 @@ export default function ImageSlide() {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
     }, 5000); // Change slide every 5 seconds
     return () => clearInterval(interval);
-  }, [slides.length]);
+  });
 
   const [currentSlide, setCurrentSlide] = useState(0);
 
