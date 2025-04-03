@@ -40,7 +40,7 @@ const Testimonials = () => {
 
   return (
     <div className="relative py-24">
-      <h1 className="text-5xl font-bold mb-24 text-center">Apa kata mereka?</h1>
+      <h1 className="text-4xl md:text-5xl font-bold mb-12 md:mb-24 px-8 text-center">Apa kata mereka?</h1>
       <div
         className="flex px-10 overflow-x-auto space-x-10 no-scrollbar cursor-grab active:cursor-grabbing"
         onMouseDown={handleMouseDown}
@@ -50,7 +50,7 @@ const Testimonials = () => {
           imageSrc="/images/person-1.webp"
           name="Sahrul Hidayat"
           profession="Mahasiswa UBS PPNI Mojokerto"
-          testimonial="Saya sangat senang dengan layanan yang diberikan oleh SKSS BAZNAS Kabupaten Mojokerto. Terima kasih banyak! Saya sangat senang dengan layanan yang diberikan oleh SKSS BAZNAS Kabupaten Mojokerto. Terima kasih banyak!"
+          testimonial="Terima kasih kepada BAZNAS Kabupaten Mojokerto yang telah memberikan bantuan beasiswa kepada kami. Semoga BAZNAS Kabupaten Mojokerto semakin sukses dan semakin banyak masyarakat yang menyalurkan sedekah, infaq, dan zakatnya melalui BAZNAS."
         />
         <TestimonialCard
           imageSrc="/images/person-1.webp"

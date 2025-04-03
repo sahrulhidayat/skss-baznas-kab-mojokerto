@@ -9,8 +9,8 @@ export default function Home() {
       <ImageSlide />
       <div className="max-7xl relative py-24 flex justify-center">
         <div className="mx-auto max-w-2xl lg:mx-0">
-          <h1 className="text-5xl font-bold mb-24 text-center">Agenda</h1>
-          <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+          <h1 className="text-4xl md:text-5xl font-bold mb-12 md:mb-24 px-8 text-center">Agenda</h1>
+          <ul className="px-8 timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
             <li>
               <div className="timeline-middle">
                 <svg

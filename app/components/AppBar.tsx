@@ -8,7 +8,7 @@ const AppBar = () => {
         <div className="flex justify-between py-2 px-5">
           <div className="flex items-center space-x-2">
             <Image src="/images/logo.png" alt="logo" width={48} height={48} className="w-12 h-12 mr-4" />
-            <div className="uppercase text-base font-semibold tracking-wider leading-5">
+            <div className="uppercase text-base font-semibold tracking-wider leading-4 md:leading-5">
               SKSS BAZNAS <br/> KABUPATEN MOJOKERTO
             </div>
           </div>
