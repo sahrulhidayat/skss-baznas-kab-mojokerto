@@ -54,7 +54,7 @@ export default function Home() {
               </div>
               <div className="timeline-end mb-10">
                 <time className="font-mono italic">April 2025</time>
-                <div className="text-lg font-black">Jum'at Berkah</div>
+                <div className="text-lg font-black">Jum&apos;at Berkah</div>
                 Kami memberdayakan sedekah dari pengusaha warung makanan berupa sejumlah makanan dan kotak nasi sekitar dan membagikannya kepada masyarakat
                 sekitar yang membutuhkan
               </div>

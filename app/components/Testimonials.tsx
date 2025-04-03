@@ -14,6 +14,10 @@ const Testimonials = () => {
     let startX: number;
     let scrollLeft: number;
 
+    isDown = true;
+    startX = e.pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
+
     const mouseMoveHandler = (e: MouseEvent) => {
       if (!isDown) return;
       e.preventDefault();
@@ -28,10 +32,7 @@ const Testimonials = () => {
       window.removeEventListener("mouseup", mouseUpHandler);
       window.removeEventListener("mouseleave", mouseUpHandler);
     };
-
-    isDown = true;
-    startX = e.pageX - slider.offsetLeft;
-    scrollLeft = slider.scrollLeft;
+    
     window.addEventListener("mousemove", mouseMoveHandler);
     window.addEventListener("mouseup", mouseUpHandler);
     window.addEventListener("mouseleave", mouseUpHandler);

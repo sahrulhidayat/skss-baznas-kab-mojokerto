@@ -33,7 +33,7 @@ const TestimonialCard = ({
             {profession}
           </p>
         </div>
-        <p className="select-none pointer-events-none">"{testimonial}"</p>
+        <p className="select-none pointer-events-none">&quot;{testimonial}&quot;</p>
       </div>
     </div>
   );

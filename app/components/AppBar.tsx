@@ -1,4 +1,5 @@
 import NavItem from "../components/NavItem";
+import Image from "next/image";
 
 const AppBar = () => {
   return (
@@ -6,7 +7,7 @@ const AppBar = () => {
       <div className="container mx-auto">
         <div className="flex justify-between py-2 px-5">
           <div className="flex items-center space-x-2">
-            <img src="/images/logo.png" alt="logo" className="w-12 h-12 mr-4" />
+            <Image src="/images/logo.png" alt="logo" width={48} height={48} className="w-12 h-12 mr-4" />
             <div className="uppercase text-base font-semibold tracking-wider leading-5">
               SKSS BAZNAS <br/> KABUPATEN MOJOKERTO
             </div>

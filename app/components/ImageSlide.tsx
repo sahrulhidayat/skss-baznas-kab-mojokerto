@@ -3,19 +3,20 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
+const slides = [
+  { src: "/images/slide-1.jpg", alt: "Slide 1" },
+  { src: "/images/slide-2.jpg", alt: "Slide 2" },
+  { src: "/images/slide-3.jpg", alt: "Slide 3" },
+];
+
 export default function ImageSlide() {
-  const slides = [
-    { src: "/images/slide-1.jpg", alt: "Slide 1" },
-    { src: "/images/slide-2.jpg", alt: "Slide 2" },
-    { src: "/images/slide-3.jpg", alt: "Slide 3" },
-  ];
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
     }, 5000); // Change slide every 5 seconds
     return () => clearInterval(interval);
-  }, []);
+  }, [slides.length]);
 
   const [currentSlide, setCurrentSlide] = useState(0);
 
