@@ -7,9 +7,9 @@ export default function Home() {
     <>
       <AppBar />
       <ImageSlide />
-      <div className="max-7xl relative py-24 flex justify-center">
+      <div className="max-7xl relative py-12 flex justify-center">
         <div className="mx-auto max-w-2xl lg:mx-0">
-          <h1 className="text-4xl md:text-5xl font-bold mb-12 md:mb-24 px-8 text-center">Agenda</h1>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 md:mb-12 px-8 text-center">Agenda</h1>
           <ul className="px-8 timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
             <li>
               <div className="timeline-middle">
@@ -26,9 +26,9 @@ export default function Home() {
                   />
                 </svg>
               </div>
-              <div className="timeline-start mb-10 md:text-end">
-                <time className="font-mono italic">10-14 Maret 2025</time>
-                <div className="text-lg font-black">Pasar Murah Ramadhan</div>
+              <div className="text-sm timeline-start mb-10 md:text-end">
+                <time className="text-sm md:text-lg font-mono italic">10-14 Maret 2025</time>
+                <div className="text-sm md:text-lg font-black">Pasar Murah Ramadhan</div>
                 Membantu BAZNAS Kabupaten Mojokerto untuk melaksanakan acara
                 Pasar Murah Ramadhan. Acara ini bertujuan untuk membantu
                 masyarakat yang membutuhkan dalam memenuhi kebutuhan pokok

@@ -3,19 +3,26 @@
 import TestimonialCard from "./TestimonialCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import "swiper/css/pagination";
+
+import { Pagination } from "swiper/modules";
 
 const Testimonials = () => {
   return (
-    <div className="relative py-12">
-      <h1 className="text-4xl md:text-5xl font-bold text-center">
+    <div className="relative py-12 ">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center">
         Apa kata mereka?
       </h1>
-      <div className="max-7xl relative px-8 py-6 md:py-12 flex justify-center">
+      <div className="relative max-7xl px-8 py-6 md:py-12 object-center">
         <Swiper
           spaceBetween={30}
           pagination={{
-            clickable: true,
+            el: ".custom-pagination",
+            renderBullet: (index, className) => {
+              return `<span class="${className}" style="background-color: #50C878;"></span>`;
+            },
           }}
+          modules={[Pagination]}
           className="w-full max-w-7xl"
           breakpoints={{
             640: {
@@ -54,8 +61,8 @@ const Testimonials = () => {
             />
           </SwiperSlide>
         </Swiper>
+        <div className="custom-pagination mt-4 flex justify-center space-x-2 items-center mx-auto"></div>
       </div>
-
       <div className="absolute inset-0 bg-gradient-to-b from-emerald-600 to-white opacity-30"></div>
     </div>
   );
