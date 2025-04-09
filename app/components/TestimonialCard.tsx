@@ -13,7 +13,7 @@ const TestimonialCard = ({
 }) => {
   return (
     <div
-      className="flex min-w-[560px] min-h-[180px] rounded-3xl border-2 border-white/70 bg-white/70 p-4 backdrop-blur-md"
+      className="flex rounded-4xl border-2 border-white/70 bg-white/70 p-4 backdrop-blur-md"
     >
       <div className="rounded-3xl h-[200px] w-[150px] overflow-hidden flex-shrink-0">
         <Image
@@ -26,14 +26,14 @@ const TestimonialCard = ({
       </div>
       <div className="px-5 space-y-1 max-h-[200]">
         <div>
-          <h4 className="text-2xl font-bold select-none pointer-events-none">
+          <h4 className="text-lg md:text-2xl font-bold select-none pointer-events-none">
             {name}
           </h4>
-          <p className="text-emerald-600 italic select-none pointer-events-none leading-5">
+          <p className="text-sm leading-4 md:leading-5 text-emerald-600 italic select-none pointer-events-none ">
             {profession}
           </p>
         </div>
-        <p className="select-none pointer-events-none">&quot;{testimonial}&quot;</p>
+        <p className="text-sm leading-4 md:leading-4.5 select-none pointer-events-none">&quot;{testimonial}&quot;</p>
       </div>
     </div>
   );
