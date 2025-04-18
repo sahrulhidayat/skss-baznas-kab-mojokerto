@@ -11,18 +11,18 @@ const AppBar = () => {
     <div className="bg-emerald-600 text-white">
       <div className="container mx-auto">
         <div className="flex justify-between py-2 px-5">
-          <div className="flex items-center space-x-2">
+            <div className="flex items-center space-x-2">
             <Image
               src="/images/logo.png"
               alt="logo"
               width={48}
               height={48}
-              className="w-12 h-12 mr-4"
+              className="mr-4 filter brightness-0 invert"
             />
-            <div className="w-6/8 uppercase text-sm md:text-base font-semibold tracking-wider leading-4 md:leading-5">
+            <div className="w-6/8 md:w-6/10 uppercase text-sm md:text-base font-semibold tracking-wider leading-4 md:leading-5">
               SKSS BAZNAS KABUPATEN MOJOKERTO
             </div>
-          </div>
+            </div>
           <div className="w-6/12 flex justify-end">
             <div className="flex sm:hidden h-full items-center">
               <button
