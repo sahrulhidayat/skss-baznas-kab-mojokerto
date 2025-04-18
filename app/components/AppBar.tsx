@@ -19,8 +19,8 @@ const AppBar = () => {
               height={48}
               className="w-12 h-12 mr-4"
             />
-            <div className="uppercase text-base font-semibold tracking-wider leading-4 md:leading-5">
-              SKSS BAZNAS <br /> KABUPATEN MOJOKERTO
+            <div className="w-6/8 uppercase text-sm md:text-base font-semibold tracking-wider leading-4 md:leading-5">
+              SKSS BAZNAS KABUPATEN MOJOKERTO
             </div>
           </div>
           <div className="w-6/12 flex justify-end">
