@@ -53,7 +53,7 @@ export default function Home() {
                 </svg>
               </div>
               <div className="timeline-end mb-10">
-                <time className="font-mono italic">April 2025</time>
+                <time className="text-sm md:text-lg font-mono italic">April 2025</time>
                 <div className="text-lg font-black">Jum&apos;at Berkah</div>
                 Kami memberdayakan sedekah dari pengusaha warung makanan berupa sejumlah makanan dan kotak nasi sekitar dan membagikannya kepada masyarakat
                 sekitar yang membutuhkan
@@ -77,7 +77,7 @@ export default function Home() {
                 </svg>
               </div>
               <div className="timeline-start mb-10 md:text-end">
-                <time className="font-mono italic">???</time>
+                <time className="text-sm md:text-lg font-mono italic">???</time>
                 <div className="text-lg font-black">
                   Tunggu acara kami selanjutnya ya...!!
                 </div>
