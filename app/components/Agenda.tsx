@@ -1,6 +1,6 @@
 const Agenda = () => {
   return (
-    <div className="max-7xl relative py-12 flex justify-center">
+    <div className="relative py-12 flex justify-center">
       <div className="mx-auto max-w-2xl lg:mx-0">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 md:mb-12 px-8 text-center">
           Agenda

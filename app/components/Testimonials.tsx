@@ -9,11 +9,11 @@ import { Pagination } from "swiper/modules";
 
 const Testimonials = () => {
   return (
-    <div className="relative py-12 ">
+    <div className="relative py-12">
       <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center">
         Apa kata mereka?
       </h1>
-      <div className="relative max-7xl px-8 py-6 md:py-12 object-center">
+      <div className="relative px-8 py-6 md:py-12 object-center">
         <Swiper
           spaceBetween={30}
           pagination={{
