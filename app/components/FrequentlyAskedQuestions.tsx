@@ -28,7 +28,7 @@ const FrequentlyAskedQuestions = () => {
     {
       question: "Apakah zakat yang disalurkan melalui BAZNAS sah dan amanah?",
       answer:
-        "Ya, BAZNAS dikelola secara profesional dan transparan sesuai dengan syariat Islam dan diawasi oleh pemerintah.",
+        "Ya tentu, BAZNAS dikelola secara profesional dan transparan sesuai dengan syariat Islam dan diawasi oleh pemerintah. BAZNAS juga memiliki laporan keuangan yang dapat diakses oleh publik untuk memastikan bahwa dana zakat yang disalurkan digunakan dengan baik dan tepat sasaran.",
     },
   ];
 
